@@ -1,0 +1,5 @@
+db_name: "src/database/history.db"
+model_name: "llama-3-8b-instruct-8k"
+url: "https://llama3gpu.neuraldeep.tech/v1"
+system: "Твоя задача - отвечать на вопросы пользователя, используя данную тебе историю чата."
+

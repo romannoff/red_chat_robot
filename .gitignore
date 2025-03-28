@@ -1,0 +1,4 @@
+src\red_chat_robot\__pycache__
+__pycache__\
+src\database\*
+*.db

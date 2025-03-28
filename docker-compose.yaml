@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  chat_app:
+    build:
+      context: .  # Указываем путь к директории для сборки
+    volumes:
+      - ./src/database:/app/database
+    ports:
+      - '7860:7860'
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    entrypoint: python /app/src/red_chat_robot/main.py
