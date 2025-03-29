@@ -74,7 +74,6 @@ class VectorsDataBase:
         :param similarity_threshold: Порог схожести
         :return: Список найденных чанков
         """
-        print(1)
 
         query_embedding = self.embedding_model.encode(f"query: {query}")
 

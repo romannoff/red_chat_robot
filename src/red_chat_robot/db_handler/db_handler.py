@@ -68,7 +68,7 @@ class Database:
             if not history:
                 return []
 
-            return [dict(role=msg.msg_type, content=msg.msg_text) for msg in history]
+            return [dict(role=msg.msg_type, content=msg.msg_text) for msg in reversed(history)]
 
     def clear_history(self, chat_id):
         """

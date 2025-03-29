@@ -18,6 +18,12 @@ class Config(BaseModel):
     system: str = Field(
         default="",
     )
+    prompt_generator_system: str = Field(
+        default="",
+    )
+    topic_system: str = Field(
+        default="",
+    )
 
     @classmethod
     def from_yaml(cls, path: str) -> "Config":
